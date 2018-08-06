@@ -3,6 +3,11 @@ body {
     color: black;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 header nav {
     display: flex;
     margin-top: 20px;
@@ -20,22 +25,64 @@ header nav ul {
 }
 
 header nav ul li {
+    background: #f8f8f8;
     list-style: none;
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 5px;
     height: 40px;
     width: 120px;
-    line-height: 40px;
-    text-align: center;
-    font-variant: small-caps;
-    font-size: 1.3em;
     border: 1px solid #CB1242;
     box-shadow: 4px 4px 8px -3px #A5A5A5;
 }
 
-a {
-    text-decoration: none;
-    color: black;
+header nav ul li a {
+    display: block;
+    position: relative;
+    line-height: 40px;
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 1.3em;
+}
+
+#selected {
+    border: 2px solid #CB1242;
+}
+
+header nav ul li:active {
+    box-shadow: none;
+}
+
+header nav ul li a:active {
+    font-size: 1.27em;
+}
+
+header nav ul li a:hover {
+    color: #CB1242;
+    background: white;
+}
+
+header nav:hover #logo {
+    animation-name: logorotate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes logorotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 hr {
@@ -83,22 +130,67 @@ h3 {
     text-align: left;
 }
 
-.products .content ul {
-    list-style:none;
+.products table {
+    border-collapse: collapse;
+    text-align: center;
     color:  #484343;
     font-size: 18px;
-    line-height: 28px;
 }
 
-.products .content li:before {
-    content: "🕮";
-    margin-right: 1em;
+.products td {
+    border: 1px solid #484343;
+    height: 30px;
+}
+
+.products tr:first-child {
+    height: 40px;
+}
+
+.products tr:first-child td:first-child {
     color: #CB1242;
 }
+
+.products td:first-child {
+    width: 40px;
+}
+
+.products td:nth-child(2) {
+    width: 160px;
+}
+
+.products td:last-child {
+    width: 240px;
+}
+
+/*.products .content ul {*/
+    /*list-style:none;*/
+    /*color:  #484343;*/
+    /*font-size: 18px;*/
+    /*line-height: 28px;*/
+/*}*/
+
+/*.products .content li:before {*/
+    /*content: "🕮";*/
+    /*margin-right: 1em;*/
+    /*color: #CB1242;*/
+/*}*/
 
 .products .content img {
     border: 1px solid #CB1242;
     box-shadow: 4px 4px 8px -3px #A5A5A5;
+}
+
+.products .content a:hover img{
+    border: 1px solid transparent;
+}
+
+.products .content a:active img{
+    box-shadow: none;
+}
+
+.products .content p:first-letter {
+    color: #CB1242;
+    font-size: 25px;
 }
 
 .contact fieldset {
@@ -128,6 +220,16 @@ h3 {
     font-weight: 400;
 }
 
+.contact fieldset #name {
+    text-transform: capitalize;
+}
+
+.contact fieldset input:focus,select:focus,textarea:focus {
+    background: white;
+    color: #05607E;
+    box-shadow: 4px 4px 8px -3px #cecece inset;
+}
+
 .contact fieldset select {
     height: 38px;
     width: 362px;
@@ -149,4 +251,8 @@ h3 {
     text-align: center;
     border: 1px solid #CB1242;
     box-shadow: 4px 4px 8px -3px #A5A5A5;
+}
+
+.contact button:active {
+    box-shadow: none;
 }
