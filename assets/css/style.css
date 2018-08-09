@@ -1,6 +1,12 @@
 body {
     background: #f8f8f8;
     color: black;
+    margin: 0;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
 }
 
 a {
@@ -8,24 +14,34 @@ a {
     color: black;
 }
 
+header {
+    position:fixed;
+    top:0;
+    background-color: #eaeaea;
+    height: 40px;
+    padding: 20px 0 20px 0;
+    border-bottom: 2px solid #CB1242;
+}
+
 header nav {
-    display: flex;
-    margin-top: 20px;
-    margin-bottom: 15px;
+    display: inline-block;
+    width: 1000px;
 }
 
 header img {
+    float: left;
     margin-left: 20px;
     height: 40px;
 }
 
 header nav ul {
     display: inline-block;
-    margin: 0;
+    float: right;
+    margin: 0 15px 0 0;
 }
 
 header nav ul li {
-    background: #f8f8f8;
+    background: white;
     list-style: none;
     display: inline-block;
     margin-right: 5px;
@@ -58,48 +74,23 @@ header nav ul li a:active {
 
 header nav ul li a:hover {
     color: #CB1242;
-    background: white;
 }
 
-header nav:hover #logo {
-    animation-name: logorotate;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-@keyframes logorotate {
-    0% {
-        transform: rotate(0deg);
-    }
-    25% {
-        transform: rotate(10deg);
-    }
-    50% {
-        transform: rotate(0deg);
-    }
-    75% {
-        transform: rotate(-10deg);
-    }
-    100% {
-        transform: rotate(0deg);
-    }
-}
-
-hr {
-    height:1px;
-    border: 0;
-    background-color: #CB1242;
-
+section {
+    margin-top: 100px;
 }
 
 h1, h2, h3 {
     font-weight: 400;
     font-variant: small-caps;
+    padding-left: 25px;
+    text-align: center;
 }
 
 h1 {
     font-size: 2em;
     line-height: 40px;
+    margin-bottom: 20px;
 }
 
 h2 {
@@ -108,6 +99,7 @@ h2 {
 
 h3 {
     font-size: 1.4em;
+    text-align: left;
 }
 
 .products h3 {
@@ -115,11 +107,64 @@ h3 {
     background-color: #eaeaea;
 }
 
+p {
+    text-align: justify;
+}
+
+section p:first-letter {
+    color: #CB1242;
+    font-size: 1.2em;
+    padding-left: 25px;
+}
+
+.block {
+    display: block;
+    width: 1000px;
+    text-align: center;
+}
+
+.storegrid img {
+    width: 200px;
+    height: 260px;
+}
+
+.storegrid {
+    width: 20%;
+    float: left;
+    margin-right: 5%;
+    outline: 1px solid #CB1242;
+    box-shadow: 4px 4px 8px -3px #A5A5A5;
+    text-align: center;
+}
+
+.storegrid:active {
+    box-shadow: none;
+}
+
+.storegrid:nth-child(n) {
+    margin: 15px 25px 15px 25px;
+}
+
+.storegrid:nth-child(-n+4) {
+    margin-top: 0;
+}
+
+.storegrid:nth-last-child(1) {
+    margin-bottom: 110px;
+}
+
 #shortdesc {
     color:  #707070;
     font-size: 18px;
     font-style: italic;
     line-height: 16px;
+}
+
+.products .block #shortdesc {
+    float: left;
+    width: 70%;
+    line-height: 24px;
+    margin-top: 0;
 }
 
 #longdesc {
@@ -130,52 +175,22 @@ h3 {
     text-align: left;
 }
 
-.products table {
-    border-collapse: collapse;
-    text-align: center;
+.products .content ul {
+    list-style:none;
     color:  #484343;
     font-size: 18px;
+    line-height: 28px;
 }
 
-.products td {
-    border: 1px solid #484343;
-    height: 30px;
-}
-
-.products tr:first-child {
-    height: 40px;
-}
-
-.products tr:first-child td:first-child {
+.products .content li:before {
+    content: "🕮";
+    margin-right: 1em;
     color: #CB1242;
 }
 
-.products td:first-child {
-    width: 40px;
-}
-
-.products td:nth-child(2) {
-    width: 160px;
-}
-
-.products td:last-child {
-    width: 240px;
-}
-
-/*.products .content ul {*/
-    /*list-style:none;*/
-    /*color:  #484343;*/
-    /*font-size: 18px;*/
-    /*line-height: 28px;*/
-/*}*/
-
-/*.products .content li:before {*/
-    /*content: "🕮";*/
-    /*margin-right: 1em;*/
-    /*color: #CB1242;*/
-/*}*/
-
 .products .content img {
+    width: 200px;
+    height: 300px;
     border: 1px solid #CB1242;
     box-shadow: 4px 4px 8px -3px #A5A5A5;
 }
@@ -188,13 +203,26 @@ h3 {
     box-shadow: none;
 }
 
-.products .content p:first-letter {
-    color: #CB1242;
-    font-size: 25px;
+.products .content a {
+    float: right;
+    width: 20%;
+    margin: 0 20px 20px 20px;
+}
+
+.contact form {
+    float: right;
+    width: 700px;
+    margin: 0 20px 20px 0;
+}
+
+.contact fieldset legend {
+    font-size: 1.4em;
+    font-weight: 400;
+    font-variant: small-caps;
+    line-height: 30px;
 }
 
 .contact fieldset {
-    width: 480px;
     padding: 10px;
     line-height: 40px;
     border: 1px solid #CB1242;
@@ -210,7 +238,7 @@ h3 {
 .contact fieldset input,select,textarea {
     background-color: #fcfcfc;
     float: right;
-    width: 350px;
+    width: 500px;
     height: 30px;
     border: 1px solid #484343;
     box-shadow: 4px 4px 8px -3px #A5A5A5 inset;
@@ -232,27 +260,67 @@ h3 {
 
 .contact fieldset select {
     height: 38px;
-    width: 362px;
+    width: 512px;
 }
 
 .contact fieldset textarea {
-    width: 480px;
+    width: 550px;
     height: 120px;
     resize: none;
+    float: left;
+    padding-bottom: 5px;
 }
 
-.contact button {
+button {
     background-color: #f8f8f8;
     float: right;
     height: 30px;
     width: 100px;
-    margin-top: 4px;
+    margin-top: 100px;
     line-height: 20px;
     text-align: center;
     border: 1px solid #CB1242;
     box-shadow: 4px 4px 8px -3px #A5A5A5;
+    cursor: pointer;
 }
 
-.contact button:active {
+.products button {
+    float: left;
+    height: 40px;
+    width: 120px;
+    margin: 0 0 0 20px;
+    font-variant: small-caps;
+    font-size: 1.3em;
+}
+
+button:active {
     box-shadow: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+#map {
+    display: block;
+    margin-bottom: 60px;
+}
+
+.stub {
+    clear:both;
+}
+
+footer {
+    position:fixed;
+    bottom:0;
+    width: 1000px;
+    background-color: #eaeaea;
+    height: 60px;
+    border-top: 2px solid #CB1242;
+}
+
+footer p {
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
 }
