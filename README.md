@@ -11,3 +11,4 @@ Lesson 4 - https://github.com/810411/GB_HTML-CSS_Homeworks/tree/lesson4
 
 Lesson 5 - https://github.com/810411/GB_HTML-CSS_Homeworks/tree/lesson5
 
+Lesson 6, 7 - https://github.com/810411/GB_HTML-CSS_Homeworks/tree/lesson6
