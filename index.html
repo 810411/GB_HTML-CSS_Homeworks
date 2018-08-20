@@ -1,62 +1,113 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
     <head>
         <meta charset="UTF-8">
-        <title>Welcome to  surfhouse</title>
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-              integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Title</title>
+        <link rel="stylesheet" href="packages/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="packages/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles/style.css">
     </head>
     <body>
-        <header>
-            <div class="headerInside">
-                <a class="logo" href="#"><img src="assets/img/logo.png" alt="logo"></a>
-                <div class="iconsWrap">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-youtube"></i>
-                    <i class="fab fa-pinterest-p"></i>
-                    <i class="fab fa-instagram"></i>
+        <div class="header">
+            <div class="container">
+                <nav class="navbar navbar-default xsNavBar visible-xs">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed"
+                                    data-toggle="collapse"
+                                    data-target="#bs-example-navbar-collapse-1"
+                                    aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand xsLogo" href="#">Surfhouse</a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Apparel</a></li>
+                                <li><a href="#">Surf Apparel</a></li>
+                                <li><a href="#">Windsurf</a></li>
+                                <li><a href="#">Kitesurf</a></li>
+                                <li><a href="#">Accessories</a></li>
+                                <li><a href="#">Sale</a></li>
+                                <li><a href="#">Brands</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Gadgets</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                </nav>
+                <a href="#" class="logo hidden-xs">Surfhouse</a>
+                <div class="welcomeWrap">
+                    <div class="welcome">
+                        Welcome to surfhouse
+                    </div>
+                    <div class="welcomeText">
+                        The only online store you<br>
+                        will ever need for all your<br>
+                        windsurfing and kitesurf-<br>
+                        ing and SUP needs
+                    </div>
                 </div>
-                <div class="welcome">
-                    <h1>Welcome to SurfHouse</h1>
-                    <p><em>The only online store you will ever need for all your windsurfing and kitesurfing and SUP needs</em></p>
+                <div class="socialIconsWrap">
+                    <a href="#">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-youtube" aria-hidden="true"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
                 </div>
-                <div class="slide">
-                    <h2>
-                        JP Funride<br>
+                <div class="funrideWrap">
+                    <div class="funrideHead">
+                        Jp Funride<br>
                         2014
-                    </h2>
-                    <p>
-                        Super easy going freeride boards based on the X-Cite Ride shape concept with additional
-                        control and super easy jibing.
-                    </p>
-                    <button>buy now</button>
+                    </div>
+                    <div class="funrideDesc">
+                        Super easy going freeride boards<br>
+                        based on the X-Cite Ride shape con<br>
+                        cept with additional control and super<br>
+                        easy jibing.
+                    </div>
+                    <a class="funrideBuyBtn" href="#">Buy now</a>
                 </div>
             </div>
-        </header>
-        <section class="content">
-            <div class="contentInside">
-                <aside class="left">
-                    <nav>
-                        <div></div>
-                        <ul>
-                            <li class="menu_name">menu</li>
-                            <li class="menu_item">About</li>
-                            <li class="menu_item">apparel</li>
-                            <li class="menu_item">surf apparel</li>
-                            <li class="menu_item">windsurf</li>
-                            <li class="menu_item">kitesurf</li>
-                            <li class="menu_item">accessories</li>
-                            <li class="menu_item">sale</li>
-                            <li class="menu_item">brands</li>
-                            <li class="menu_item">blog</li>
-                            <li class="menu_item">Gadgets</li>
-                            <li class="menu_item">cantact</li>
-                        </ul>
-                    </nav>
+        </div>
+
+        <div class="container content">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-4">
+                    <ul class="hidden-xs mainMenu">
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Apparel</a></li>
+                        <li><a href="#">Surf Apparel</a></li>
+                        <li><a href="#">Windsurf</a></li>
+                        <li><a href="#">Kitesurf</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Sale</a></li>
+                        <li><a href="#">Brands</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Gadgets</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
                     <div class="nowIsOpen">
                         <div class="nowIsOpenInside">
                             <span>
@@ -66,128 +117,276 @@
                             </span>
                         </div>
                     </div>
-                </aside>
-                <article>
-                    <h2>New products</h2>
-                    <ul>
-                        <li class="productCard new">
-                            <img src="assets/img/products/surf1.jpg" alt="">
-                            <div class="productName">Single Thruster 2014</div>
-                            <div class="productPrice">€.865.00</div>
-                        </li>
-                        <li class="productCard hot">
-                            <img src="assets/img/products/surf2.jpg" alt="">
-                            <div class="productName">Freestyle Wave FSW</div>
-                            <div class="productPrice">€.770.50</div>
-                            <div class="productPriceOld">€.1,270.15</div>
-                        </li>
-                        <li class="productCard">
-                            <img src="assets/img/products/surf3.jpg" alt="">
-                            <div class="productName">The White Collection SURFBOARD 2014</div>
-                            <div class="productPrice">€.1,580.70</div>
-                        </li>
-                        <li class="productCard">
-                            <img src="assets/img/products/surf4.jpg" alt="">
-                            <div class="productName">OG SCALLOP SOLID</div>
-                            <div class="productPrice">€.765.00</div>
-                        </li>
-                        <li class="productCard">
-                            <img src="assets/img/products/surf5.jpg" alt="">
-                            <div class="productName">STRIPE 19 QS</div>
-                            <div class="productPrice">€.230.50</div>
-                        </li>
-                        <li class="productCard">
-                            <img src="assets/img/products/surf6.jpg" alt="">
-                            <div class="productName">YOKE 19 QS</div>
-                            <div class="productPrice">€.1,130.70</div>
-                        </li>
-                    </ul>
-                    <div class="clearfix"></div>
-                    <h2>Top products</h2>
-                    <ul>
-                        <li class="productCard">
-                            <img src="assets/img/products/springsuit1.jpg" alt="">
-                            <div class="productName">Ushingham  Lightning 2014 </div>
-                            <div class="productPrice">€.2,960.95</div>
-                            <div class="productPriceOld">€.3,100.15</div>
-                        </li>
-                        <li class="productCard">
-                            <img src="assets/img/products/springsuit2.jpg" alt="">
-                            <div class="productName">CYPHER HEAT VES M</div>
-                            <div class="productPrice">€.849.95</div>
-                        </li>
-                        <li class="productCard">
-                            <img src="assets/img/products/springsuit3.jpg" alt="">
-                            <div class="productName">SYNCRO WOMENS  QS M</div>
-                            <div class="productPrice">€.1,110.99</div>
-                        </li>
-                    </ul>
-                    <div class="clearfix"></div>
-                    <h2>Sale products</h2>
-                    <ul>
-                        <li class="productCard">
-                            <img src="assets/img/products/gloves.jpg" alt="">
-                            <div class="productName">SYNCRO MENS QS M</div>
-                            <div class="productPrice">€.249.95</div>
-                            <div class="productPriceOld">€.450.15</div>
-                        </li>
-                        <li class="productCard">
-                            <img src="assets/img/products/rashguard.jpg" alt="">
-                            <div class="productName">RAMOS - SHIRT FOR MEN</div>
-                            <div class="productPrice">€.459.65</div>
-                            <div class="productPriceOld">€.570.65</div>
-                        </li>
-                        <li class="productCard">
-                            <img src="assets/img/products/wetsuit.jpg" alt="">
-                            <div class="productName">SixSixOne Evo Wired Full Face </div>
-                            <div class="productPrice">€.240.00</div>
-                            <div class="productPriceOld">€.370.65</div>
-                        </li>
-                    </ul>
-                </article>
-                <div class="clearfix"></div>
-                <aside class="bottom">
-                    <div class="brands">
-                        <img src="assets/img/brands/Bic-surf_1.jpg" alt="">
-                        <img src="assets/img/brands/CBC_1.jpg" alt="">
-                        <img src="assets/img/brands/Channel-Islands_2.jpg" alt="">
-                        <img src="assets/img/brands/Cortez_1.jpg" alt="">
-                        <img src="assets/img/brands/Firewire_1.jpg" alt="">
-                        <img src="assets/img/brands/Haydenshapes_1.jpg" alt="">
-                        <img src="assets/img/brands/Lost.jpg" alt="">
-                        <img src="assets/img/brands/Nine-Plus_1.jpg" alt="">
+                </div>
+                <div class="col-lg-9 col-md-8 col-sm-8">
+                    <div class="contentHeader newProductsHeader">
+                        New products
                     </div>
-                    <div class="istagramFeedWrap">
-                        <div class="instaFeedHead">
-                            <i class="fab fa-instagram"></i>
-                            <span>Instagram feed:</span> #surfhouse
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 productUnitCol">
+                            <div class="productUnit">
+                                <div class="productCornerNew">new</div>
+                                <img class="productImg" src="images/products/surf1.jpg" alt="surf1">
+                                <div class="nameAndPriceWrap">
+                                    <div class="productName">
+                                        Single Thruster 2014
+                                    </div>
+                                    <div class="productPriceWrap">
+                                        <div class="actualPrice">
+                                            &euro;&nbsp;865.00
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="instaFeedImages">
-                            <img src="assets/img/instaFeed/1.jpg" alt="">
-                            <img src="assets/img/instaFeed/2.jpg" alt="">
-                            <img src="assets/img/instaFeed/3.jpg" alt="">
-                            <img src="assets/img/instaFeed/4.jpg" alt="">
-                            <img src="assets/img/instaFeed/5.jpg" alt="">
-                            <img src="assets/img/instaFeed/6.jpg" alt="">
+                        <div class="col-lg-4 col-md-6 productUnitCol">
+                            <div class="productUnit">
+                                <div class="productCornerHot">hot</div>
+                                <img class="productImg" src="images/products/surf2.jpg" alt="surf2">
+                                <div class="nameAndPriceWrap">
+                                    <div class="productName">
+                                        Freestyle Wave FSW
+                                    </div>
+                                    <div class="productPriceWrap">
+                                        <div class="actualPrice">
+                                            &euro;&nbsp;770.50
+                                        </div>
+                                        <div class="oldPrice">
+                                            &euro;&nbsp;1,270.15
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 productUnitCol">
+                            <div class="productUnit">
+                                <img class="productImg" src="images/products/surf3.jpg" alt="surf3">
+                                <div class="nameAndPriceWrap">
+                                    <div class="productName">
+                                        The White Collection
+                                        SURFBOARD 2014
+                                    </div>
+                                    <div class="productPriceWrap">
+                                        <div class="actualPrice">
+                                            &euro;&nbsp;1,580.70
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 productUnitCol">
+                            <div class="productUnit">
+                                <img class="productImg" src="images/products/surf4.jpg" alt="surf4">
+                                <div class="nameAndPriceWrap">
+                                    <div class="productName">
+                                        OG SCALLOP SOLID
+                                    </div>
+                                    <div class="productPriceWrap">
+                                        <div class="actualPrice">
+                                            &euro;&nbsp;765.00
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 productUnitCol">
+                            <div class="productUnit">
+                                <img class="productImg" src="images/products/surf5.jpg" alt="surf5">
+                                <div class="nameAndPriceWrap">
+                                    <div class="productName">
+                                        STRIPE 19 QS
+                                    </div>
+                                    <div class="productPriceWrap">
+                                        <div class="actualPrice">
+                                            &euro;&nbsp;230.50
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 productUnitCol">
+                            <div class="productUnit">
+                                <img class="productImg" src="images/products/surf6.jpg" alt="surf6">
+                                <div class="nameAndPriceWrap">
+                                    <div class="productName">
+                                        YOKE 19 QS
+                                    </div>
+                                    <div class="productPriceWrap">
+                                        <div class="actualPrice">
+                                            &euro;&nbsp;1,130.70
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="socialButtonsWrap">
-                        <a href="#">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fab fa-pinterest"></i>
-                        </a>
+                    <div class="contentHeader">
+                        Top products
                     </div>
-                </aside>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 productUnitCol">
+                            <div class="productUnit">
+                                <img class="productImg" src="images/products/springsuit1.jpg"
+                                     alt="springsuit1">
+                                <div class="nameAndPriceWrap">
+                                    <div class="productName">
+                                        Ushingham
+                                        Lightning 2014
+                                    </div>
+                                    <div class="productPriceWrap">
+                                        <div class="actualPrice">
+                                            &euro;&nbsp;2,960.95
+                                        </div>
+                                        <div class="oldPrice">
+                                            &euro;&nbsp;3,100.15
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 productUnitCol">
+                            <div class="productUnit">
+                                <img class="productImg" src="images/products/springsuit2.jpg"
+                                     alt="springsuit2">
+                                <div class="nameAndPriceWrap">
+                                    <div class="productName">
+                                        CYPHER HEAT VES M
+                                    </div>
+                                    <div class="productPriceWrap">
+                                        <div class="actualPrice">
+                                            &euro;&nbsp;849.95
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 productUnitCol">
+                            <div class="productUnit">
+                                <img class="productImg" src="images/products/springsuit3.jpg"
+                                     alt="springsuit3">
+                                <div class="nameAndPriceWrap">
+                                    <div class="productName">
+                                        SYNCRO WOMENS
+                                        QS M
+                                    </div>
+                                    <div class="productPriceWrap">
+                                        <div class="actualPrice">
+                                            &euro;&nbsp;1,110.99
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contentHeader">
+                        Sale products
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 productUnitCol">
+                            <div class="productUnit">
+                                <img class="productImg" src="images/products/rashguard.jpg"
+                                     alt="rashguard">
+                                <div class="nameAndPriceWrap">
+                                    <div class="productName">
+                                        SYNCRO MENS QS M
+                                    </div>
+                                    <div class="productPriceWrap">
+                                        <div class="actualPrice">
+                                            &euro;&nbsp;249.95
+                                        </div>
+                                        <div class="oldPrice">
+                                            &euro;&nbsp;450.15
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 productUnitCol">
+                            <div class="productUnit">
+                                <img class="productImg" src="images/products/springsuit2.jpg"
+                                     alt="springsuit2">
+                                <div class="nameAndPriceWrap">
+                                    <div class="productName">
+                                        RAMOS - SHIRT FOR MEN
+                                    </div>
+                                    <div class="productPriceWrap">
+                                        <div class="actualPrice">
+                                            &euro;&nbsp;459.65
+                                        </div>
+                                        <div class="oldPrice">
+                                            &euro;&nbsp;570.65
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 productUnitCol">
+                            <div class="productUnit">
+                                <img class="productImg" src="images/products/springsuit3.jpg"
+                                     alt="springsuit3">
+                                <div class="nameAndPriceWrap">
+                                    <div class="productName">
+                                        SixSixOne Evo Wired Full Face
+                                    </div>
+                                    <div class="productPriceWrap">
+                                        <div class="actualPrice">
+                                            &euro;&nbsp;240.00
+                                        </div>
+                                        <div class="oldPrice">
+                                            &euro;&nbsp;370.65
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-        <footer>
-            <div class="footerInside">
-                <div>
+            <div class="row">
+                <div class="container-fluid">
+                    <div class="brands">
+                        <img src="images/brands/Bic-surf_1.jpg" alt="">
+                        <img src="images/brands/CBC_1.jpg" alt="">
+                        <img src="images/brands/Channel-Islands_2.jpg" alt="">
+                        <img src="images/brands/Cortez_1.jpg" alt="">
+                        <img src="images/brands/Firewire_1.jpg" alt="">
+                        <img src="images/brands/Haydenshapes_1.jpg" alt="">
+                        <img src="images/brands/Lost.jpg" alt="">
+                        <img class="hidden-md" src="images/brands/Nine-Plus_1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="instagramFeedWrap">
+                <div class="instaFeedHead">
+                    <i class="fa fa-instagram"></i>
+                    <span>Instagram feed:</span> #surfhouse
+                </div>
+                <div class="instaFeedImages">
+                    <img src="images/instaFeed/1.jpg" alt="">
+                    <img src="images/instaFeed/2.jpg" alt="">
+                    <img src="images/instaFeed/3.jpg" alt="">
+                    <img src="images/instaFeed/4.jpg" alt="">
+                    <img src="images/instaFeed/5.jpg" alt="">
+                    <img src="images/instaFeed/6.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="socialButtonsWrap">
+                <a href="#">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-pinterest"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container footerInside">
+                <div class="footerColumn">
                     <div class="columnHead">
                         Category
                     </div>
@@ -201,7 +400,7 @@
                         <a href="#">contact</a>
                     </div>
                 </div>
-                <div>
+                <div class="footerColumn">
                     <div class="columnHead">
                         Our Account
                     </div>
@@ -215,7 +414,7 @@
                         <a href="#">Search Terms</a>
                     </div>
                 </div>
-                <div>
+                <div class="footerColumn">
                     <div class="columnHead">
                         Our Support
                     </div>
@@ -229,7 +428,7 @@
                         <a href="#">Addresses</a>
                     </div>
                 </div>
-                <div class="newsLetter">
+                <div class="footerColumn newsLetter">
                     <div class="columnHead">
                         Newsletter
                     </div>
@@ -240,16 +439,16 @@
                         <input type="text" placeholder="INSERT EMAIL">
                         <button>SUBMIT</button>
                         <div class="cardsWrap">
-                            <img src="assets/img/paymentMethods/american-express.jpg" alt="">
-                            <img src="assets/img/paymentMethods/master-card.jpg" alt="">
-                            <img src="assets/img/paymentMethods/maestro.jpg" alt="">
-                            <img src="assets/img/paymentMethods/paypal.jpg" alt="">
-                            <img src="assets/img/paymentMethods/discover.jpg" alt="">
-                            <img src="assets/img/paymentMethods/visa.jpg" alt="">
+                            <img src="images/paymentMethods/american-express.jpg" alt="">
+                            <img src="images/paymentMethods/master-card.jpg" alt="">
+                            <img src="images/paymentMethods/maestro.jpg" alt="">
+                            <img src="images/paymentMethods/paypal.jpg" alt="">
+                            <img src="images/paymentMethods/discover.jpg" alt="">
+                            <img src="images/paymentMethods/visa.jpg" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="about">
+                <div class="footerColumn about">
                     <div class="columnHead">
                         About Us
                     </div>
@@ -269,22 +468,25 @@
                     </div>
                 </div>
             </div>
-            <div class="footerCopyrights">
-                <div class="copyrightsInside">
-                    <div class="footerCopySign">
-                        2018  SURFHOUSE. All rights reserved
-                    </div>
-                    <div class="footerSocials">
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-pinterest"></i>
-                        <i class="fab fa-google-plus"></i>
-                        <i class="fab fa-tumblr-square"></i>
-                        <i class="fab fa-instagram"></i>
-                        <i class="fas fa-rss"></i>
-                    </div>
+        </div>
+        <div class="footerCopyrights">
+            <div class="container copyrightsInside">
+                <div class="footerCopySign">
+                    &copy; 2018  SURFHOUSE. All rights reserved
+                </div>
+                <div class="footerSocials">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-pinterest-p"></i>
+                    <i class="fa fa-google-plus"></i>
+                    <i class="fa fa-tumblr"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-feed"></i>
                 </div>
             </div>
-        </footer>
+        </div>
+
+        <script src="packages/jquery/jquery-1.12.4.min.js"></script>
+        <script src="packages/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     </body>
 </html>
